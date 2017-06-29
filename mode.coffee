@@ -1,6 +1,6 @@
 command: "sh ./nerdbar.widget/scripts/screens.sh"
 
-refreshFrequency: 200 # ms
+refreshFrequency: 100 # ms
 
 render: (output) ->
   """
