@@ -59,7 +59,7 @@ table, span {
 }
 .orangebg {
     background: #fabd2f;
-    color: #e1e2e7;
+    color: #ebdbb2;
 }
 
 .yellow {
@@ -68,21 +68,21 @@ table, span {
 
 .yellowbg {
     background: #c77a4b;
-    color: #e1e2e7;
+    color: #ebdbb2;
 }
 
 .green {
-    color: #32cf72;
+    color: #b8bb26;
 }
 
 .greenbg {
-    background: #32cf72;
-    color: #e1e2e7;
+    background: #b8bb26;
+    color: #ebdbb2;
 }
 
 .bluebg {
     background: #5124e3;
-    color: #e1e2e7;
+    color: #ebdbb2;
 }
 
 .cyan {
@@ -91,7 +91,7 @@ table, span {
 
 .cyanbg {
     background: #1da9a2;
-    color: #e1e2e7;
+    color: #ebdbb2;
 }
 
 .blue {
@@ -124,4 +124,8 @@ table, span {
 
 .grey {
     color: #b3b9be;
+}
+
+.active {
+
 }

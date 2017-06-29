@@ -56,7 +56,7 @@ update: (output, domEl) ->
     i += 1
     # the active space has a closing paren aroound the name
     if sseg.slice(-1) == ")"
-      screenhtml += "<span class='icon screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
+      screenhtml += "<span class='icon green screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
     else
       screenhtml += "<span class='icon white screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
 
