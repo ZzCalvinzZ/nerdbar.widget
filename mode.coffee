@@ -18,12 +18,8 @@ style: """
 update: (output, domEl) ->
   values = output.split('@')
 
-  file = ""
   screenhtml = ""
-  mode = values[0]
   screens = values[1]
-  wins = values[2]
-  win = ""
   i = 0
 
   # The script ouputs the space names in parens so you can split them here. The
@@ -39,16 +35,7 @@ update: (output, domEl) ->
 
   i = 0
 
-  icons = {
-    "1": ' ',
-    "2": ' ',
-    "3": ' ',
-    "4": ' ',
-    "6": ' ',
-    "5": ' ',
-    "7": '',
-    "8": '',
-  }
+  icons = ['', ' ', ' ', ' ', ' ', ' ', ' ', '', '']
 
   #apply a proper number tag so that space change controls can be added
   for sseg in screensegs
@@ -63,17 +50,3 @@ update: (output, domEl) ->
 
   #display the html string
   $(domEl).find('.kwmmode').html(screenhtml)
-
-  ## add screen changing controls to the screen icons
-  #$(".screen1").on 'click', => @run "osascript -e 'tell application \"System Events\" to key code 18 using control down'"
-  #$(".screen2").on 'click', => @run "osascript -e 'tell application \"System Events\" to key code 19 using control down'"
-  #$(".screen3").on 'click', => @run "osascript -e 'tell application \"System Events\" to key code 20 using control down'"
-  #$(".screen4").on 'click', => @run "osascript -e 'tell application \"System Events\" to key code 21 using control down'"
-
-  ## cycle through KWM space modes by clicking on the mode icon or mode name
-  #if /bsp/.test(mode) == true
-    #$(".tilingMode").on 'click', => @run "/usr/local/bin/kwmc space -t float"
-  #else if /float/.test(mode) == true
-    #$(".tilingMode").on 'click', => @run "/usr/local/bin/kwmc space -t monocle"
-  #else
-    #$(".tilingMode").on 'click', => @run "/usr/local/bin/kwmc space -t bsp"

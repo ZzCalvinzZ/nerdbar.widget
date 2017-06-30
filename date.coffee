@@ -1,6 +1,6 @@
 command: "/usr/local/bin/kwmc query window focused name"
 
-refreshFrequency: 2000 # ms
+refreshFrequency: 5000 # ms
 
 render: (output) ->
   """
