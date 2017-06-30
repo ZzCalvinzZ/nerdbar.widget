@@ -9,10 +9,9 @@ render: (output) ->
   """
 
 style: """
-  -webkit-font-smoothing: antialiased
   left: 10px
-  top: 5px
-  width:850px
+  top: 2px
+  width: 25%
   cursor: pointer;
 """
 
@@ -41,14 +40,14 @@ update: (output, domEl) ->
   i = 0
 
   icons = {
-    "1": '',
-    "2": '',
-    "3": '',
-    "4": '',
-    "5": '',
-    "6": '',
-    "7": '',
-    "8": '',
+    "1": ' ',
+    "2": ' ',
+    "3": ' ',
+    "4": ' ',
+    "6": ' ',
+    "5": ' ',
+    "7": '',
+    "8": '',
   }
 
   #apply a proper number tag so that space change controls can be added
@@ -58,7 +57,7 @@ update: (output, domEl) ->
     if sseg.slice(-1) == ")"
       screenhtml += "<span class='icon green screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
     else
-      screenhtml += "<span class='icon white screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
+      screenhtml += "<span class='icon screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
 
   console.log screenhtml
 

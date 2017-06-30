@@ -29,9 +29,8 @@
 *color15: #ebdbb2
 */
 table, span {
-    color: #b8bb26;
-    /*font: 12px SFMono-Medium;*/
-    /*text-transform: lowercase;*/
+    color: #ebdbb2;
+    font: 14px FontAwesome;
     -webkit-font-smoothing: antialiased;
 }
 .white {
@@ -106,11 +105,13 @@ table, span {
     position: relative;
     font: 10px FontAwesome;
 }
+
 .icon {
     position: relative;
-    top: 1px;
+    /*top: 1px;*/
     font: 14px FontAwesome;
 }
+
 .weather {
     font: 16px WeatherIcons-Regular;
     position: relative;
@@ -124,6 +125,10 @@ table, span {
 
 .grey {
     color: #b3b9be;
+}
+
+.fg {
+    color: #ebdbb2;
 }
 
 .active {

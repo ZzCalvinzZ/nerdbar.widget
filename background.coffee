@@ -10,6 +10,5 @@ style: """
   right: 0px;
   left 0px;
   height: 24px
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.60);
   z-index: -1
 """
