@@ -5,14 +5,15 @@ refreshFrequency: 100 # ms
 render: (output) ->
   """
     <link rel="stylesheet" type="text/css" href="./nerdbar.widget/colors.css" />
-    <div class='kwmmode'></div>
+    <div class='kwmmode' style='height: 100%; display: flex;'></div>
   """
 
 style: """
   left: 10px
-  top: 2px
+  top: 0px
+  height: 21px
   width: 25%
-  cursor: pointer;
+  cursor: pointer
 """
 
 update: (output, domEl) ->
@@ -42,9 +43,9 @@ update: (output, domEl) ->
     i += 1
     # the active space has a closing paren aroound the name
     if sseg.slice(-1) == ")"
-      screenhtml += "<span class='icon green screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
+      screenhtml += "<div class='screen icon active-screen' style=''><span class='screen-val'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span></div>"
     else
-      screenhtml += "<span class='icon screen#{i}'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span>"
+      screenhtml += "<div class='screen icon'><span class='screen-val'>&nbsp#{i}#{icons[i]}&nbsp&nbsp</span></div>"
 
   console.log screenhtml
 

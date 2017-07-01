@@ -131,6 +131,15 @@ table, span {
     color: #ebdbb2;
 }
 
-.active {
+.screen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
+
+.active-screen {
+    background-color: #98971a;
+    border-bottom: 3px solid #fabd2f;
+    
 }
